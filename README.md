@@ -1,4 +1,4 @@
-# Beginner Docker Tutorial for Mac OSX
+# fuelphp-crash-course-docker
 
 ## Table of Contents
   1. Introduction
