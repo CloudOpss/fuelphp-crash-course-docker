@@ -53,7 +53,7 @@ The only files that must be downloaded are:
 - *nginx.conf*
 - *default.conf**
 
-Everything else will be created during the tutorial. 
+Everything else will be created during the tutorial.
 
 ## Part 1: Getting Started (Installation and Setup)
   Docker is built to work Linux based Kernels. Therefore, a virtual machine is
@@ -537,8 +537,8 @@ Everything else will be created during the tutorial.
      20|    - "9000:9000"
      21|   environment:
      22|    - DB_HOST=mysql
-     23|    - DB_NAME=test_db
-     24|    - DB_USER=test_user
+     23|    - DB_NAME=fuel
+     24|    - DB_USER=user
      25|    - DB_PASS=secret
     ```
 
@@ -581,8 +581,8 @@ Everything else will be created during the tutorial.
      20|    - "9000:9000"
      21|   environment:
      22|    - DB_HOST=mysql
-     23|    - DB_NAME=test_db
-     24|    - DB_USER=test_user
+     23|    - DB_NAME=fuel
+     24|    - DB_USER=user
      25|    - DB_PASS=secret
      26|   volumes:
      27|    - ./app:/var/www/html:rw
@@ -617,8 +617,8 @@ Everything else will be created during the tutorial.
      20|    - "9000:9000"
      21|   environment:
      22|    - DB_HOST=mysql
-     23|    - DB_NAME=test_db
-     24|    - DB_USER=test_user
+     23|    - DB_NAME=fuel
+     24|    - DB_USER=user
      25|    - DB_PASS=secret
      26|   volumes:
      27|    - ./app:/var/www/html:rw
@@ -630,9 +630,9 @@ Everything else will be created during the tutorial.
      33|    image: mysql:5.5.47
      34|    environment:
      35|     - MYSQL_ROOT_PASSWORD=secret
-     36|     - MYSQL_USER=test_user
+     36|     - MYSQL_USER=user
      37|     - MYSQL_PASSWORD=secret
-     38|     - MYSQL_DATABASE=test_db
+     38|     - MYSQL_DATABASE=fuel
      39|    ports:
      40|     - "3306:3306"
     ```
