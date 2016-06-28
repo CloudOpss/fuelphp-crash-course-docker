@@ -1,15 +1,17 @@
-# Beginner Docker Tutorial for Mac OSX
+# FuelPHP Crash Course Docker
 
 ## Table of Contents
-  1. Introduction
+  1. Contributors
+  2. Introduction
+    - Authors
     - Prerequisite Knowledge
     - Included Files
-  2. Part 1: Getting Started (Installation and Setup)
+  3. Part 1: Getting Started (Installation and Setup)
     - Installing Virtual Box
     - Installing Docker Components with Homebrew
     - Setting Up the Machine
     - Testing Docker
-  3. Part 2: Setting Up a LEMP Server
+  4. Part 2: Setting Up a LEMP Server
     - Docker Compose
     - Editing docker-file.yml
       - Version
@@ -25,7 +27,9 @@
       - Run
     - Configuring the LEMP Stack
     - Testing the LEMP Stack
-  4. Conclusion
+
+## Contributors
+  - [Sam Belcastro](https://github.com/samuel-belcastro/)
 
 ## Introduction
 Docker is an open platform that allows developers to use a virtualization
@@ -813,5 +817,3 @@ Everything else will be created during the tutorial.
 
     You should see the entire php configuration file put into a nicely
     formatted webpage.
-
-## Conclusion
