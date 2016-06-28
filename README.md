@@ -27,6 +27,7 @@
       - Run
     - Configuring the LEMP Stack
     - Testing the LEMP Stack
+  5. More practice
 
 ## Contributors
   - [Sam Belcastro](https://github.com/samuel-belcastro/)
@@ -60,7 +61,7 @@ The only files that must be downloaded are:
 Everything else will be created during the tutorial.
 
 ## Part 1: Getting Started (Installation and Setup)
-  Docker is built to work Linux based Kernels. Therefore, a virtual machine is
+  Docker is built to work with Linux based Kernels. Therefore, a virtual machine is
   required to develop with Docker on Mac OSX. Luckily, Docker realizes the
   struggle involved with this, and makes using the virtual machine as easy as
   possible!
@@ -91,8 +92,8 @@ Everything else will be created during the tutorial.
     ```
 
     Finally, we want to install docker compose. Docker compose allows us to
-    build docker and link containers, along with mounting directories
-    from the host machine to the containers, with a single yaml file!
+    build and link docker containers, along with mounting directories
+    from the host machine to the containers, with a single .yaml file!
 
     After setting up docker compose, we will be able to launch our whole web
     server with one command!
@@ -142,7 +143,7 @@ Everything else will be created during the tutorial.
       default   *        virtualbox   Running   tcp://IP_OF_MACHINE:PORT            v1.11.2     
     ```
     Congratulations! The machine is now successfully created. There is now only
-    step left in order to seamlessly use our machine.
+    one step left in order to seamlessly use our docker machine.
 
     Run the following command:
 
@@ -516,7 +517,7 @@ Everything else will be created during the tutorial.
 
     Defining environment variables is also a relatively simple process. We are
     going to define four variables, and they will define how we interact with
-    our MySQL server.
+    our MySQL container.
 
     ```
       1| version: '2'
@@ -817,3 +818,10 @@ Everything else will be created during the tutorial.
 
     You should see the entire php configuration file put into a nicely
     formatted webpage.
+
+## More Practice
+
+By this point, we have enough knowledge to learn how to create a FuelPHP web
+application using docker to host all of the web services. Checkout this
+[FuelPHP Crash Course w/ Docker](https://github.com/UCF/fuelphp-crash-course)
+tutorial to become gain some more experience! XD
