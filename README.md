@@ -1,4 +1,4 @@
-# fuelphp-crash-course-docker
+# Beginner Docker Tutorial for Mac OSX
 
 ## Table of Contents
   1. Introduction
@@ -586,7 +586,6 @@ Everything else will be created during the tutorial.
      25|    - DB_PASS=secret
      26|   volumes:
      27|    - ./app:/var/www/html:rw
-     28|    - ./config/php:/usr/local/etc/php/conf.d:ro
      29|   links:
      30|    - mysql
     ```
@@ -622,7 +621,6 @@ Everything else will be created during the tutorial.
      25|    - DB_PASS=secret
      26|   volumes:
      27|    - ./app:/var/www/html:rw
-     28|    - ./config/php:/usr/local/etc/php/conf.d:ro
      29|   links:
      30|    - mysql
      31|
