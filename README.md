@@ -823,6 +823,6 @@ Everything else will be created during the tutorial.
 
 By this point, we have enough knowledge to learn how to create a FuelPHP web
 application using docker to host all of the web services. Checkout this
-[FuelPHP Crash Course w/ Docker](https://github.com/UCF/fuelphp-crash-course)
+[FuelPHP Crash Course w/ Docker](http://ucf.github.io/fuelphp-crash-course/)
 tutorial to gain some more experience with docker while creating a practical
 application! XD
