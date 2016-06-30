@@ -1,0 +1,39 @@
+version: '2'
+ 
+services:
+  nginx:
+    image: nginx:stable-alpine
+    ports:
+      - "80:80"
+    volumes:
+      - ./app/public:/var/www/html/public:ro
+      - ./config/nginx/nginx.conf:/etc/nginx/nginx.conf:ro
+      - ./config/nginx/conf.d/default.conf:/etc/nginx/conf.d/default.conf:ro
+    links:
+      - phpfpm
+ 
+  phpfpm:
+    build:
+      context: .
+      dockerfile: docker_builds/Dockerfile.phpfpm
+    ports:
+      - "9000:9000"
+    environment:
+      - DB_HOST=mysql
+      - DB_NAME=fuel
+      - DB_USER=user
+      - DB_PASS=secret
+    volumes:
+      - ./app:/var/www/html:rw
+    links:
+      - mysql
+ 
+  mysql:
+    image: mysql:5.5.47
+    environment:
+      - MYSQL_ROOT_PASSWORD=secret
+      - MYSQL_USER=user
+      - MYSQL_PASWORD=secret
+      - MYSQL_DATABASE=fuel
+    ports:
+      - "3306:3306"
